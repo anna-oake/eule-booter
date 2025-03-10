@@ -18,7 +18,7 @@ insmod tftp
 
 net_bootp
 
-source (tftp,eule-booter.lan.al)/grub-config
+source (tftp,eule-booter.lan.al)
 ```
 
 This makes GRUB initialise network, receive configuration over DHCP, and then attempt sourcing a config from a remote TFTP server. `eule-booter.lan.al` is a DNS name of an LXC running software from this repo.
