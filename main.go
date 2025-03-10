@@ -50,7 +50,7 @@ func main() {
 	log.Println("[HTTP] Binding to :80")
 	log.Println("[TFTP] Binding to :69")
 
-	http.HandleFunc("/next-boot", handleHTTP)
+	http.HandleFunc("/{$}", handleHTTP)
 	go func() {
 		err := http.ListenAndServe(":80", nil)
 		if err != nil {

@@ -40,12 +40,12 @@ This software provides a basic HTTP API available on port 80.
 Get current next boot option:
 
 ```shell
-curl http://eule-booter.lan.al/next-boot
+curl http://eule-booter.lan.al
 ```
 
 Set next boot option (e.g. `uefi-firmware`):
 ```shell
-curl -d 'uefi-firmware' http://eule-booter.lan.al/next-boot
+curl -d 'uefi-firmware' http://eule-booter.lan.al
 ```
 
 eule-booter keeps the next boot option in RAM, so it will return back to **0** upon restart.
